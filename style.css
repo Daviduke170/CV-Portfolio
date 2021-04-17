@@ -1,0 +1,193 @@
+@import 'https://fonts.google.com/specimen/Karla';
+
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Karla';
+    font-size: large;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.date{
+    color: hsl(179, 62%, 43%);
+}
+/* Side Bar */
+.sidebar{
+    background: hsl(179, 62%, 43%);
+    height: 99%;
+    box-shadow: -15px 7px 30px rgba(156, 121, 121, 0.25);
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.sidebar-body{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+html .sidebar{
+    color: #f1f1f1;
+}
+
+.sidebar i{
+    font-size: 25px;
+}
+
+.img-container{
+    position: relative;
+    background-image: url("profile.jpg.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.img-text{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 15%;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 2px solid gray;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 2px solid gray;
+}
+
+.address{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-bottom: 2px solid gray;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+/* End of Side Bar */
+
+.main{
+    height: 100%;
+    margin-top: 0;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "work-experience . ."
+     "education . ."
+     "reference . ."
+     ;
+}
+
+.main i{
+    font-size: 30px;
+    color: gray;
+}
+
+.main h2, h4{
+    color: gray;
+}
+
+.work-experience{
+    grid-area: work-experience;
+    box-sizing: border-box;
+    box-shadow: -15px 7px 30px rgba(156, 121, 121, 0.25);
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.ministry{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.hotel{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.clinic{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.education{
+    grid-area: education;
+    box-sizing: border-box;
+    box-shadow: -15px 7px 30px rgba(156, 121, 121, 0.25);
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.university{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.college{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.high-school{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.referee{
+    grid-area: reference;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    box-shadow: -15px 7px 30px rgba(156, 121, 121, 0.25);
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.saminu{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.abi{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main i{
+        font-size: 25px;
+    }
+}
