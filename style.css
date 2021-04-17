@@ -44,10 +44,6 @@ html .sidebar{
     color: #f1f1f1;
 }
 
-.sidebar i{
-    font-size: 25px;
-}
-
 .img-container{
     position: relative;
     background-image: url("profile.jpg.jpg");
@@ -100,11 +96,6 @@ html .sidebar{
      "education . ."
      "reference . ."
      ;
-}
-
-.main i{
-    font-size: 30px;
-    color: gray;
 }
 
 .main h2, h4{
@@ -187,7 +178,15 @@ html .sidebar{
         flex-direction: column;
     }
 
-    .main i{
-        font-size: 25px;
+    .sidebar{
+        text-align: center;
+    }
+
+    .img-text{
+        right: 20px;
+    }
+
+    .main{
+        text-align: center;
     }
 }
